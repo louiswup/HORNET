@@ -1,0 +1,13 @@
+Dataset,BatchSize,Threat,Source Model,Attack,cohen_2019_certified TSR(FR),cohen_2019_certified S_APR,cohen_2019_certified S_total,cohen_2019_certified median_norm,cohen_2019_certified Optimality,yang_2019_MENet TSR(FR),yang_2019_MENet S_APR,yang_2019_MENet S_total,yang_2019_MENet median_norm,yang_2019_MENet Optimality,per-time,Average transfer optimality
+cifar10,128,l2,standard,original_apgd_l2_minimal_20,70.6,44.1217,3112.83,14.422,0.689,53.4,6.9825,373.17,12.02,0.522,0.413,0.605
+cifar10,128,l2,standard,fb_pgd_l2_minimal_20,71.5,58.8821,4209.55,15.717,0.654,57.3,23.2248,1331.92,11.922,0.55,0.949,0.602
+cifar10,128,l2,standard,dr_fgm_l2_minimal_20,46.0,48.5876,2233.9,22.646,0.355,48.9,42.4789,2075.89,15.253,0.457,0.028,0.406
+cifar10,128,l2,standard,fb_bim_l2_minimal_20,45.8,92.1589,4220.47,22.759,0.356,49.3,81.9359,4037.8,15.644,0.456,0.028,0.406
+cifar10,128,l2,zhang_2020_small,fb_pgd_l2_minimal_20,68.0,72.9729,4961.29,14.735,0.702,55.7,37.2672,2075.68,12.939,0.625,0.03,0.663
+cifar10,128,l2,zhang_2020_small,original_apgd_l2_minimal_20,55.7,838.115,46710.5,19.596,0.513,53.6,26.7518,1434.94,17.702,0.562,0.018,0.537
+cifar10,128,l2,zhang_2020_small,dr_fgm_l2_minimal_20,16.5,168.145,2776.97,100000.0,0.124,15.0,69.5287,1044.49,100000.0,0.12,0.001,0.122
+cifar10,128,l2,zhang_2020_small,fb_bim_l2_minimal_20,6.3,792.2753,4993.99,100000.0,0,5.5,288.459,1585.01,100000.0,0,0.001,0.0
+cifar10,128,l2,ensemble,fb_pgd_l2_minimal_20,90.5,15.9731,1445.96,12.62,0.834,80.6,0.1709,13.77,9.268,0.771,1.899,0.803
+cifar10,128,l2,ensemble,original_apgd_l2_minimal_20,83.3,45.2539,3771.05,12.894,0.762,78.4,0.0188,1.48,9.709,0.741,0.826,0.752
+cifar10,128,l2,ensemble,dr_fgm_l2_minimal_20,53.6,10.2796,551.09,18.088,0.447,55.7,4.2564,237.08,11.689,0.515,0.055,0.481
+cifar10,128,l2,ensemble,fb_bim_l2_minimal_20,48.2,11.6771,562.5,21.056,0.371,50.9,0.1964,10.0,13.936,0.456,0.055,0.414

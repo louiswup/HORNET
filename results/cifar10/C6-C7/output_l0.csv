@@ -1,0 +1,4 @@
+Dataset,BatchSize,Threat,Source Model,Attack,cohen_2019_certified TSR(FR),cohen_2019_certified S_APR,cohen_2019_certified S_total,cohen_2019_certified median_norm,cohen_2019_certified Optimality,yang_2019_MENet TSR(FR),yang_2019_MENet S_APR,yang_2019_MENet S_total,yang_2019_MENet median_norm,yang_2019_MENet Optimality,per-time,Average transfer optimality
+cifar10,128,l0,standard,original_pgd0_minimal_20,74.4,0.002,0.15,990.0,1.0,60.9,0.006,0.37,558.0,1.0,1.15,1.0
+cifar10,128,l0,zhang_2020_small,original_pgd0_minimal_20,74.6,0.0031,0.23,575.0,1.0,57.9,0.0037,0.21,708.0,1.0,0.269,1.0
+cifar10,128,l0,ensemble,original_pgd0_minimal_20,93.3,0.0024,0.22,474.0,1.0,82.2,0.0048,0.39,390.0,1.0,2.301,1.0
