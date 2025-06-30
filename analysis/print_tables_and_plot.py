@@ -368,31 +368,6 @@ if __name__ == '__main__':
         #plot fig
         for attack_label in top_k_attacks(attacks_to_plot, k=5):
             i_ax = 0
-            attack_label1 = attack_label.replace("_minimal","")
-            attack_label1 = attack_label1.replace("_l1","")
-            attack_label1 = attack_label1.replace("_20","")
-            attack_label1 = "HNT-"+attack_label1.replace("_l2","")
-            if "original_" in attack_label1:
-                attack_label1 = attack_label1+"$^o$"
-                attack_label1 = attack_label1.replace("original_","")
-            if "dr_" in attack_label1:
-                attack_label1 = attack_label1+"$^{dr}$"
-                attack_label1 = attack_label1.replace("dr_","")
-            if "fb_" in attack_label1:
-                attack_label1 = attack_label1+"$^{fb}$"
-                attack_label1 = attack_label1.replace("fb_","")
-            if "ta_" in attack_label1:
-                attack_label1 = attack_label1+"$^{ta}$"
-                attack_label1 = attack_label1.replace("ta_","")
-            if "ch_" in attack_label1:
-                attack_label1 = attack_label1+"$^{ch}$"
-                attack_label1 = attack_label1.replace("ch_","")
-            if "art_" in attack_label1:
-                attack_label1 = attack_label1+"$^{art}$"
-                attack_label1 = attack_label1.replace("art_","")
-            if "adv_lib_" in attack_label1:
-                attack_label1 = attack_label1+"$^{al}$"
-                attack_label1 = attack_label1.replace("adv_lib_","")
 
             for model in target_models:
                 adv_distances = np.array(list(result[model][attack_label].values()))
