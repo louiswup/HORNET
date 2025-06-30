@@ -6,17 +6,36 @@ We propose HORNET, a novel framework for crafting minimum-norm transferable adve
 > **ℹ️ Original Project:** [attackbench/AttackBench] by [Antonio Emanuele Cinà $^\star$, Jérôme Rony $^\star$, ecc] (<https://attackbench.github.io>).
 
 ## Requirements and Installations
-python==3.9
-sacred
-pytorch==1.12.1
-torchvision==0.13.1
-adversarial-robustness-toolbox
-foolbox
-torchattacks
-cleverhans
-deeprobust
-robustbench https://github.com/RobustBench/robustbench
-adv_lib https://github.com/jeromerony/adversarial-library
+
+- python==3.9
+- sacred
+- pytorch==1.12.1
+- torchvision==0.13.1
+- adversarial-robustness-toolbox
+- foolbox
+- torchattacks
+- cleverhans
+- deeprobust
+- robustbench https://github.com/RobustBench/robustbench
+- adv_lib https://github.com/jeromerony/adversarial-library
+
+Clone the Repository:
+```bash
+git clone https://github.com/attackbench/attackbench.git
+cd attackbench
+```
+
+Use the provided `environment.yml` file to create a Conda environment with the required dependencies:
+```bash
+conda env create -f environment.yml
+```
+
+Activate the Conda environment: 
+```bash
+conda activate attackbench
+```
+
+
 
 ## Usage
 
