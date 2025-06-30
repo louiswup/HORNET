@@ -21,8 +21,8 @@ We propose HORNET, a novel framework for crafting minimum-norm transferable adve
 
 Clone the Repository:
 ```bash
-git clone https://github.com/attackbench/attackbench.git
-cd attackbench
+git clone https://github.com/louiswup/HORNET.git
+cd HORNET
 ```
 
 Use the provided `environment.yml` file to create a Conda environment with the required dependencies:
@@ -32,7 +32,7 @@ conda env create -f environment.yml
 
 Activate the Conda environment: 
 ```bash
-conda activate attackbench
+conda activate attackbench-HORNET
 ```
 
 

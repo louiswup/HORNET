@@ -1,4 +1,4 @@
-name: atkbench_HORNET
+name: atkbench-HORNET
 channels:
   - pytorch
   - defaults
