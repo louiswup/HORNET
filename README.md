@@ -66,9 +66,18 @@ Other Optional Command:
 
 After the attack completes, you can find the results saved in the specified results_trans/ directory.
 
+### How to Use the Attack
+
+HORNET implements several attack methods (e.g., `art_fgm_hornet`, `art_apgd_hornet`) that can be run via a unified command-line interface. Below are the key steps for using the attack.
+- You can extend or modify attacks by editing the configuration functions in attack_evaluation/attacks/[lib]/configs.py. Each attack requires a config function and a corresponding getter function.
+- When running one experiment, use attack.${atk} to set the attack.
+
 ## compute and print tables
-After get a couple of results then get the result tables and plot the security curves
+After get a couple of results then get the result tables and plot the security curves:
+
+```bash
 python -m analysis.print_tables_and_plot -d [results_save_dir] -dist actual --source_models [source_model1] [source_model2] ... --target_models [target_model1]  [target_model2] ...
+```
 
 Command Breakdown:
 - `-d `:  the directory  where the attack results are saved.
@@ -77,8 +86,6 @@ Command Breakdown:
 - `--target_models`: Specifies the target models in result tables and figures.
 
 After the attack completes, you can find the results saved in pwd/output_l[0,1,2,inf].csv and in [results_save_dir]/[l0,l1,l2,linf]/*.pdf
-
-
 
 ## Attack format
 
